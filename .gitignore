@@ -1,0 +1,5 @@
+.mason/bricks.json
+mason-lock.json
+**/hooks/.packages
+**/hooks/pubspec.lock
+**/hooks/.dart_tool
