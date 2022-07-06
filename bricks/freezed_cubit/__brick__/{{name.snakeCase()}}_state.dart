@@ -28,23 +28,23 @@ class {{name.pascalCase()}}State with _${{name.pascalCase()}}State {
 
 {{#generate_status}}
 @freezed
-class {{name.pascalCase()}}Status<T> with _${{name.pascalCase()}}Status<T> {
-  const factory {{name.pascalCase()}}Status.initial() = Initial<T>;
+class {{name.pascalCase()}}Status with _${{name.pascalCase()}}Status {
+  const factory {{name.pascalCase()}}Status.initial() = Initial;
 
-  const factory {{name.pascalCase()}}Status.loading() = Loading<T>;
+  const factory {{name.pascalCase()}}Status.loading() = Loading;
 
-  const factory {{name.pascalCase()}}Status.success() = Success<T>;
+  const factory {{name.pascalCase()}}Status.success() = Success;
 
-  const factory {{name.pascalCase()}}Status.failure(Error error) = Failure<T>;
+  const factory {{name.pascalCase()}}Status.failure(Error error) = Failure;
 }
 
-extension {{name.pascalCase()}}StatusExtension<T> on {{name.pascalCase()}}Status<T> {
-  bool get isInitial => this is Initial<T>;
+extension {{name.pascalCase()}}StatusExtension on {{name.pascalCase()}}Status {
+  bool get isInitial => this is Initial;
 
-  bool get isLoading => this is Loading<T>;
+  bool get isLoading => this is Loading;
 
-  bool get isSuccess => this is Success<T>;
+  bool get isSuccess => this is Success;
 
-  bool get isFailure => this is Failure<T>;
+  bool get isFailure => this is Failure;
 }
 {{/generate_status}}
