@@ -1,6 +1,6 @@
 name: freezed_cubit
 description: Generate a new cubit in Dart. Built for the bloc state management library with freezed.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/aumb/mason_templates/tree/master/bricks/freezed_cubit
 
 environment:
