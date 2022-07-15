@@ -1,0 +1,16 @@
+name: freezed_cubit_test
+description: Generate a new cubit test in Dart. Built for the bloc state management library with freezed.
+version: 0.0.1
+repository: https://github.com/aumb/mason_templates/tree/master/bricks/freezed_cubit_test
+
+vars:
+  path:
+    type: string
+    description: Generates a test file for the cubit at the given path.
+    default: ""
+    prompt: Please enter the path you want the test to be generated at (e.g test/feature/cubits)
+  name:
+    type: string
+    description: The name of the cubit class.
+    default: counter
+    prompt: Please enter the cubit name

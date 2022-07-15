@@ -1,3 +1,5 @@
 bricks:
   freezed_cubit:
     path: bricks/freezed_cubit
+  freezed_cubit_test:
+    path: bricks/freezed_cubit_test
