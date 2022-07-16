@@ -1,3 +1,6 @@
+## 0.0.1+1
+- Added gitkeep in the __brick__ folder as a workaround for bundle generation error
+
 ## 0.0.1
 - Initial release, generate a [freezed cubit][1] test with [bloc_test][2] and [flutter_test][3].
 
