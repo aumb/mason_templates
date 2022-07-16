@@ -16,12 +16,17 @@ mason make freezed_cubit
 | -------- | -------------------------- | --------- | -------- |
 | `name`   | The name of the cubit class | `counter` | `string` |
 | `generate_status`   | Whether to generate a status class for the cubit | `true` | `boolean` |
+| `path_for_test`   | The path for creating a test file for the cubit; won't generate if the value is empty  |  | `string` |
 
 ## Output 📦
 
 ```sh
 ├── counter_cubit.dart
 └── counter_state.dart
+```
+
+```sh
+├── counter_cubit_test.dart
 ```
 
 [1]: https://dart.dev

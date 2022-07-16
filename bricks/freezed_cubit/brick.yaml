@@ -1,6 +1,6 @@
 name: freezed_cubit
 description: Generate a new cubit in Dart. Built for the bloc state management library with freezed.
-version: 0.0.2
+version: 1.0.0
 repository: https://github.com/aumb/mason_templates/tree/master/bricks/freezed_cubit
 
 environment:
@@ -11,9 +11,14 @@ vars:
     type: string
     description: The name of the cubit class.
     default: counter
-    prompt: Please enter the cubit name.
+    prompt: Please enter the cubit name
   generate_status:
     type: boolean
     description: Whether to generate a status class for the cubit.
     default: true
     prompt: Do you want to generate a status class for the cubit?
+  path_for_test:
+    type: string
+    description: Generates a test file for the cubit at the given path, if left empty the test file won't be generated.
+    default: ""
+    prompt: Please enter the path you want the test to be generated at (leave empty to opt out)
